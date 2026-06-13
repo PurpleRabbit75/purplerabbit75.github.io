@@ -1,0 +1,119 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width" />
+        <title> Projects, Musings, and Other Such Nonsense</title>
+        <link rel="stylesheet" href="/style.css">
+    </head>
+
+
+    <body>
+        <main>
+
+
+            <div class='container'>
+
+                <div id="sidebar" class="sidebar">
+
+                    <script>
+                    fetch('/sidebar.html')
+                        .then(res => res.text())
+                        .then(html => {
+                        document.getElementById('sidebar').innerHTML = html;
+                        });
+                    </script>
+
+                </div>
+                
+
+                <div class='main'>
+                
+                    <h1>About This Site</h1>
+                    <p>Updated 2026-06-13</p>
+
+
+                    <h2>Tracking/Privacy</h2>
+                    <p>
+                        I don't log traffic on this site in any way. <br>
+                        I do not use cookies, tracking pixels, or anything of that ilk. <br>
+                        I never have and I never will. <br>
+                    </p>
+
+
+                    <h2>Javascript</h2>
+                    <p>
+                        As of this writing, I use Javascript exclusively for rendering the sidebar, and for no other purpose. 
+                        At some point in the future, I plan to use a 3rd-party open-source Javascript module for rendering sheet music.
+                        I have no other plans to use Javascript. 
+                    </p>
+
+                    
+                    <h2>Reverse-Engineering</h2>
+                    <p>
+                        This website is designed to be, first and foremost, <i>readable!</i> This applies both to the interface you see
+                        and to the code that you (usually) don't. I, personally, think that one of the best ways to learn to code is to
+                        reverse-engineer other people's code. You are <i>more</i> than welcome to do that to this website, and in fact, I
+                        have structured the HTML in such a way as to make it more readable for you, including adding comments in the code 
+                        when I do something obscure (I try not to do that often). You can also check out the source code either with your 
+                        browser's inspector tool or at <a href="https://github.com/PurpleRabbit75/purplerabbit75.github.io">github.com/PurpleRabbit75/purplerabbit75.github.io</a>
+                    </p>
+
+
+                    <h2>Design Decisions</h2>
+                        <p>Here are some things I'm thinking through as I design this website.</p>
+                        <br><br>
+                        
+
+                        <h3>Thing #1: Designed To Last</h3>
+                        <p>
+                            As you can read in the footer, <a href="http://jeffhuang.com/designed_to_last/">this page is designed to last!</a>
+                            There are several principles of "design-to-last", all of which you can read about on Jeff Huang's excellent webpage (linked).
+                            The one that's having the most influence on me at the moment is his call to return to vanilla HTML/CSS. I'm going to try to
+                            keep this codebase as simple as I possibly can for the most part, with the notable exception of the "Music" section. Along with
+                            that, I'm going to try to keep it very very readable, both for my sake and for yours.
+                            <br><br>
+                            With the perpetual exception of the "Music" section, I'm also going to avoid hotlinking when I can. This means that, if my site 
+                            needs a given resource to function, the code for that needs to all be right here, specified in local paths within the site directory.
+                            Hopefully, this should also make reverse-engineering this easier, since you can always git clone the repository and it should function
+                            just fine locally, without any internet (the solitary exception is, I'm afraid, the sidebar, which tends to break on local downloads due
+                            to security policies. I'm working on it...). Also, that should make this site easier to archive!
+                            <br><br>
+                            I intend to stick with web-native fonts and vector-graphic images when possible.
+                            <br><br>
+                        </p>
+
+
+                        <h3>Thing #2: Principles of Good Code</h3>
+                        <p>
+                            There's no reason that just because this is a website, its source code has to be unreadable and awful. Instead, I think I prefer a
+                            world where there <i>isn't</i> an algorithm stripping out all the whitespace on here to save a few bits of bandwidth. Yes, and let's 
+                            keep the comments too, where relevant. And I'm going to indent indent indent!
+                        </p>
+                    
+
+                    <h2>This Site Poisons Rude Bots</h2>
+                        <p>
+                            Any person wishing to scrape this site has two choices: they may choose to comply with my robots.txt file, or not. Robots that comply
+                            with my instructions there may live a long and happy life scraping the web. Robots that fail to comply will be poisoned. If you 
+                            develop or deploy web scrapers, thank you for respecting robots.txt files to make the internet a kinder place!
+                        </p>
+
+
+
+                    
+                   
+
+
+                </div>
+
+            </div>
+
+            <footer><a href="http://jeffhuang.com/designed_to_last/"> This page is designed to last</a>.</footer>
+
+
+        </main>
+    </body>
+
+
+</html>

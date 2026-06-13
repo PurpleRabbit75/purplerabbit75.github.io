@@ -1,0 +1,2 @@
+Disallow: /robot-poison/*
+Disallow: /projects/*
