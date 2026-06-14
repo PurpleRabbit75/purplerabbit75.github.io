@@ -1,10 +1,11 @@
 /* Set global color variables */
-@import url(./fonts/fonts.css);
+@import url(./formatting/fonts/fonts.css);
 
 :root {
 	--back-color: rgb(25, 25, 25);
 	--text-color: rgb(212, 212, 212);
 	--sidebar-color: rgb(35, 35, 35);
+	--link-color: rgb(116, 3, 245);
 }
 
 /* remove all automatic padding, margins, etc */
@@ -73,9 +74,8 @@ a {
 	color: inherit; 
 }
 a:hover, a:focus {
-  /* On hover, reverse the background and foreground colors around the link */
-	color: var(--back-color);
-	background-color: var(--text-color);
+  /* On hover, change the link text color to purple */
+	color: var(--link-color);
 }
 
 /* Adjust styling for small screens (phones) */
