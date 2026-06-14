@@ -1,4 +1,6 @@
 /* Set global color variables */
+@import url(./fonts/fonts.css);
+
 :root {
 	--back-color: rgb(25, 25, 25);
 	--text-color: rgb(212, 212, 212);
@@ -12,13 +14,16 @@
 	font-size: 1em;
 }
 
+
 /* Style the whole page */
 body {
 	background-color: var(--back-color);
 	color: var(--text-color);
-	font-family: "Times New Roman",Georgia,Garamond,sans-serif;
-  font-size: 1.15em
+	font-family: "Noto Serif","Times New Roman",Georgia,Garamond,sans-serif;
+	font-size: 1.15em;
 }
+
+
 
 /* Settings for the container "main" */
 main {
