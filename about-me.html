@@ -1,0 +1,70 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width" />
+        <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate">
+        <title> Projects, Musings, and Other Such Nonsense</title>
+        <link rel="stylesheet" href="/formatting/style.css">
+        <link rel="icon" type="image/x-icon" href="/formatting/purple_rabbit.ico">
+    </head>
+
+
+    <body>
+        <main>
+
+
+            <div class='container'>
+
+                <div id="sidebar" class="sidebar">
+
+                    <script>
+                    fetch('/sidebar.html')
+                        .then(res => res.text())
+                        .then(html => {
+                        document.getElementById('sidebar').innerHTML = html;
+                        });
+                    </script>
+
+                </div>
+                
+
+                <div class='main'>
+                
+                    <h1>About Me</h1>
+                    <p>Updated 2026-06-14</p>
+
+
+                    <h2>Lightning Bio</h2>
+                    <p>
+                        Christian (Nicean, Anabaptist-ish) <br>
+                        TCK <br>
+                        Rocket Scientist <br>
+                        Thinker About Life <br>
+                        Sometime Programmer <br>
+                    </p>
+
+
+                    <h2>Contact</h2>
+                    <p>
+                        For inquiries about my music or software: open an issue on my <a href="https://github.com/PurpleRabbit75">GitHub</a><br>
+                        Website-related, copyright concern, etc., write to: n44ykegg8 [at] mozmail.com <br>
+                        For inquiries about my projects or research, write to: qzfafwwq4 [at] mozmail.com <br>
+                    </p>
+
+                    
+                   
+
+
+                </div>
+
+            </div>
+
+            <footer><a href="http://jeffhuang.com/designed_to_last/"> This page is designed to last</a>.</footer>
+
+
+        </main>
+    </body>
+
+
+</html>
