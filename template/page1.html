@@ -1,0 +1,58 @@
+<!doctype html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8"> <!-- This meta tag ensures that the page is displayed correctly in different browsers and character sets -->
+		<title> This is the tab title! </title>
+		<meta name="viewport" content="width=device-width" /> <!-- This meta tag ensures the page is responsive on different devices -->
+		<meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate"> <!-- This meta tag ensures that the page is not cached by the browser. I like it here because I change my website often! -->
+		<link rel="stylesheet" href="/formatting/style.css"> <!-- This is the path to the CSS file that styles the page -->
+		<link rel="icon" type="image/x-icon" href="/formatting/purple_rabbit.ico"> <!-- This is the path to the favicon that appears in the tab -->
+	</head>
+
+
+
+	<body>
+		<main>
+
+
+			<div class='container'>
+
+
+                <div id="sidebar" class="sidebar">
+					<script>
+					fetch('/sidebar.html')
+						.then(res => res.text())
+						.then(html => {
+						document.getElementById('sidebar').innerHTML = html;
+						});
+					</script>
+				</div>
+				
+
+				<div class='main'>
+				
+					<h1>Page #1</h1>
+
+					<p>Updated 2026-06-15</p>
+
+					<p>
+						This page is a work in progress. Check back soon for updates!
+					</p>
+
+					
+					<!-- Add some more whitespace -->
+					<br><br><br><br><br><br><br><br><br><br><br>
+
+				</div>
+
+
+			</div>
+
+
+		<footer><a href="http://jeffhuang.com/designed_to_last/"> This page is designed to last</a>.</footer>
+
+		</main>
+	</body>
+
+
+</html>

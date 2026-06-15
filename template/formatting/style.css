@@ -1,0 +1,118 @@
+/* Set global color variables */
+@import url(./formatting/fonts/fonts.css);
+
+:root {
+	--back-color: rgb(25, 25, 25);
+	--text-color: rgb(212, 212, 212);
+	--sidebar-color: rgb(35, 35, 35);
+	--link-color: rgb(116, 3, 245);
+}
+
+/* remove all automatic padding, margins, etc */
+* {
+	padding: 0;
+	margin: 0;
+	font-size: 1em;
+}
+
+
+/* Style the whole page */
+body {
+	background-color: var(--back-color);
+	color: var(--text-color);
+	font-family: "Noto Serif","Times New Roman",Georgia,Garamond,sans-serif;
+	font-size: 1.15em;
+}
+
+
+
+/* Settings for the container "main" */
+main {
+	margin: 0;
+	padding: 0;
+	max-width: none;
+	min-height: 100vh;
+}
+
+/* Settings for Heading 1 */
+h1 {
+	font-size: 2.2em;
+	font-weight: 700;
+	display: inline;
+	margin-right: 5px;
+}
+
+/* Settings for Heading 2 */
+h2 {
+	margin-top: 50px;
+	font-size: 1.5em;
+}
+
+/* Settings for Heading 3 */
+h3 {
+	font-weight: 700;
+  font-size: 1.2em;
+}
+
+/* Settings for the footer */
+footer {
+	text-align: center;
+	margin-top: 50px;
+	padding-bottom: 20px;
+}
+
+/* Settings for the paragraphs */
+p {
+	line-height: 1.5em;
+	margin-top: 10px;
+	display: block;
+}
+
+/* Settings for links */
+a {
+  /* Match the default text color */
+	color: inherit; 
+}
+a:hover, a:focus {
+  /* On hover, change the link text color to purple */
+	color: var(--link-color);
+}
+
+/* Adjust styling for small screens (phones) */
+/* Note to self: edit this */
+@media (max-width: 600px) {
+  main {
+  	max-width: 600px;
+    padding: 10px;
+  }
+  h2 {
+    font-size: 1.2em;
+  }
+}
+
+/* Set up a 2-column container to contain the sidebar and main*/
+.container {
+  width: 100%;
+  display: grid;
+  grid-template-areas: "sidebar main";
+  grid-template-columns: min-content auto;
+  min-height: 100vh;
+}
+
+/* Style the sidebar object */
+.sidebar {
+  grid-area: sidebar;
+  align-self: stretch;
+  background-color: var(--sidebar-color);
+  white-space: nowrap;
+  padding-right: 15px;
+  padding-left: 10px;
+}
+
+/* Style the main box */
+.main {
+  grid-area: main;
+  height: auto;
+  background-color: var(--back-color);
+  padding: 30px 140px 0 140px;
+}
