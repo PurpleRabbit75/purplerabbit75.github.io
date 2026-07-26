@@ -116,3 +116,9 @@ a:hover, a:focus {
   background-color: var(--back-color);
   padding: 30px 140px 0 140px;
 }
+
+.center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
