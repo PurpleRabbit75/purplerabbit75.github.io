@@ -1,0 +1,47 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate">
+<title> Projects, Musings, and Other Such Nonsense
+</title>
+<meta name="viewport" content="width=device-width" />
+<link rel="stylesheet" href="/formatting/style.css">
+<link rel="icon" type="image/x-icon" href="/formatting/purple_rabbit.ico">
+
+
+</head>
+
+	<body>
+
+
+			<div class='container'>
+
+                <div id="sidebar" class="sidebar">
+
+					<script>
+					fetch('/sidebar.html')
+						.then(res => res.text())
+						.then(html => {
+						document.getElementById('sidebar').innerHTML = html;
+						});
+					</script>
+
+				</div>
+				
+				
+				<iframe 
+                    src="https://web.archive.org/web/20180703195015if_/https://www.maptoglobe.com/" 
+                    width="100%" 
+                    height="800" 
+                    style="border:none;"
+                    allowfullscreen>
+                </iframe>
+
+
+				</div>
+			</div>
+
+
+	</body>
+</html>
